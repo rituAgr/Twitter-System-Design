@@ -6,7 +6,7 @@
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 127.0.0.1 (MySQL 5.7.14)
-# Database: suggestApp
+# Database: Twitter
 # Generation Time: 2016-09-03 16:38:56 +0000
 # ************************************************************
 

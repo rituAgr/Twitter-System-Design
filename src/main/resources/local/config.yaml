@@ -6,12 +6,12 @@ twtterbase:
   # the password
   password:
   # the JDBC URL
-  url: jdbc:mysql://localhost/suggestApp
+  url: jdbc:mysql://localhost/Twitter
   # any properties specific to your JDBC driver:
   properties:
    charSet: UTF-8
    hibernate.show_sql: true
-   hibernate.hbm2ddl.auto: validate
+   hibernate.hbm2ddl.auto: create
    hibernate.session.events.log: false
 
   # the maximum amount of time to wait on an empty pool before throwing an exception
@@ -42,7 +42,7 @@ logging:
       archive: true
       archivedFileCount: 3
       logFormat: "%date %level [%thread] %logger{10} [%X{id}] %msg%n\n"
-      archivedLogFilenamePattern: /var/log/flipkart/erp/fk-crm-spartans-dashboard/app-%d{yyyy-MM-dd}.log
+      archivedLogFilenamePattern: /var/log/Ritu/erp/implementing.log
       timeZone: IST
     - type: console
 
@@ -70,12 +70,12 @@ server:
 
 
   requestLog:
-      timeZone: IST
+      timeZone: CST
       enabled: true
       appenders:
         - type: file
-          currentLogFilename: /var/log/flipkart/erp/fk-crm-spartans-dashboard/request.log
-          archivedLogFilenamePattern: /var/log/flipkart/erp/fk-crm-spartans-dashboard/request-%d.log
+          currentLogFilename: /var/log/Ritu/implementing.log
+          archivedLogFilenamePattern: /var/log/Ritu/erp/implementing.log
           timeZone: IST
           archivedFileCount: 3
           logFormat: "%date %level %logger{10} [%X{id}] %msg%n"

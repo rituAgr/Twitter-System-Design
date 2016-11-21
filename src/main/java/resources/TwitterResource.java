@@ -47,7 +47,6 @@ public class TwitterResource {
     @Timed
     public Response readWFMConfig(@PathParam("name") String name)//@PathParam is used to extract path parameter string and send over
     {
-
         return Response.ok(customerSerivce.getCustomer(name)).build();
     }
 

@@ -24,8 +24,6 @@ public class InjectorModule implements Module {
     @Override
     public void configure(Binder binder) {
         binder.bind(AppConfiguration.class).toInstance(configuration);
-//      binder.bind(HibernateBundle.class).toInstance(excaliburBundle);
-//      binder.bind(HibernateBundle.class).toInstance(flipconnectBundle);
     }
 
 
@@ -47,29 +45,6 @@ public class InjectorModule implements Module {
     {
         return new TweetDAO(excaliburSessionFactory);
     }
-//
-//    @Provides
-//    public UserDAO getUserDAO()
-//    {
-//        return new UserDAO(narsilSessionFactory);
-//    }
-//
-//    @Provides
-//    public TeamsDAO getTeamsDAO()
-//    {
-//        return new TeamsDAO(narsilSessionFactory);
-//    }
-//
-//    @Provides
-//    public RolesDAO getRolesDAO()
-//    {
-//        return new RolesDAO(narsilSessionFactory);
-//    }
-//
-//    @Provides
-//    public UserTeamRoleDAO getUserTeamRoleDAO()
-//    {
-//        return new UserTeamRoleDAO(narsilSessionFactory);
-//    }
+
 
 }
